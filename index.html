@@ -8,8 +8,8 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #333;
+      background: #121212;
+      color: #e0e0e0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -18,10 +18,11 @@
       padding: 40px 20px;
     }
     .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 16px rgba(26,86,160,0.10);
-      max-width: 480px;
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+      max-width: 440px;
       width: 100%;
       padding: 40px 36px 32px;
       text-align: center;
@@ -29,48 +30,48 @@
     .logo {
       font-size: 28px;
       font-weight: bold;
-      color: #1a56a0;
+      color: #64a8f0;
       letter-spacing: 1px;
       margin-bottom: 4px;
     }
     .tagline {
       font-size: 14px;
-      color: #888;
+      color: #555;
       margin-bottom: 32px;
     }
     h1 {
-      font-size: 18px;
-      color: #444;
+      font-size: 16px;
+      color: #777;
       margin-bottom: 24px;
       font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
     .links {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
     .link-btn {
       display: flex;
       align-items: center;
       gap: 14px;
-      background: #f0f5ff;
-      border: 1px solid #d0e0f7;
+      background: #252525;
+      border: 1px solid #333;
       border-radius: 8px;
       padding: 16px 20px;
       text-decoration: none;
-      color: #1a56a0;
-      font-size: 16px;
+      color: #90bdf7;
+      font-size: 15px;
       font-weight: bold;
       transition: background 0.15s, border-color 0.15s;
     }
     .link-btn:hover {
-      background: #ddeeff;
-      border-color: #1a56a0;
+      background: #2a2a3a;
+      border-color: #64a8f0;
+      color: #64a8f0;
     }
-    .link-btn .icon {
-      font-size: 24px;
-      flex-shrink: 0;
-    }
+    .link-btn .icon { font-size: 22px; flex-shrink: 0; }
     .link-btn .desc {
       font-size: 12px;
       font-weight: normal;
@@ -81,9 +82,11 @@
     footer {
       margin-top: 32px;
       font-size: 12px;
-      color: #bbb;
+      color: #444;
       text-align: center;
     }
+    footer a { color: #444; text-decoration: none; }
+    footer a:hover { color: #64a8f0; }
   </style>
 </head>
 <body>
@@ -91,9 +94,7 @@
   <div class="card">
     <div class="logo">SurveyTools</div>
     <div class="tagline">by EXSports Oy</div>
-
     <h1>Legal Documents</h1>
-
     <div class="links">
       <a class="link-btn" href="privacy_policy.html">
         <span class="icon">🔒</span>
@@ -114,7 +115,7 @@
 
   <footer>
     &copy; 2026 EXSports Oy &nbsp;|&nbsp;
-    <a href="mailto:info@exsports.fi" style="color:#bbb;">info@exsports.fi</a>
+    <a href="mailto:info@exsports.fi">info@exsports.fi</a>
   </footer>
 
 </body>
