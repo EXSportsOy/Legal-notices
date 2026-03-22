@@ -54,36 +54,6 @@
         between those two intermediate results along the trim axis.
       </p>
 
-      <details>
-        <summary>Formulas (optional)</summary>
-        <p class="small">Shown for transparency. Not a substitute for official standards or certified tables.</p>
-        <h3>Linear</h3>
-        <pre><code>y = y1 + (x - x1) * (y2 - y1) / (x2 - x1)
-
-Special case:
-- if x1 == x2 and x == x1, then y = y1
-- otherwise invalid (no slope)
-</code></pre>
-
-        <h3>One-way</h3>
-        <pre><code>x1 = floor(ullage / interval) * interval
-x2 = x1 + interval
-result = linear(x1, y1, x2, y2, ullage)
-</code></pre>
-
-        <h3>Two-way</h3>
-        <pre><code>x1 = floor(ullage / ullageInterval) * ullageInterval
-x2 = x1 + ullageInterval
-
-t1 = floor(actualTrim / trimInterval) * trimInterval
-t2 = t1 + trimInterval
-
-resultA = linear(x1, y1a, x2, y2a, ullage)   // at trim t1
-resultB = linear(x1, y1b, x2, y2b, ullage)   // at trim t2
-
-final = linear(t1, resultA, t2, resultB, actualTrim)
-</code></pre>
-      </details>
 
       <h2>Notes & limitations</h2>
       <ul>
