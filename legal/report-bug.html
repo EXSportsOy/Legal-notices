@@ -155,6 +155,15 @@
       line-height: 1.6;
     }
 
+    .form-iframe {
+      width: 100%;
+      min-height: 900px;
+      border: none;
+      border-radius: 8px;
+      background: transparent;
+      margin-top: 8px;
+    }
+
     hr { border: none; border-top: 1px solid var(--hr-color); margin: 28px 0; }
 
     footer {
@@ -179,36 +188,13 @@
 
     <p>Found something that doesn't work as expected? Let us know — we read every report and use them to improve SurveyTools.</p>
 
-    <p>Tap the button below to open a pre-filled email template in your email app. Replace each <strong>[placeholder]</strong> with your information, then send.</p>
+    <p>Fill in the form below to send us a bug report.</p>
 
-    <div class="info-box">
-      <strong>Please include the following:</strong><br/>
-      • <strong>Device</strong> — make and model (e.g. Samsung Galaxy S23, iPhone 15 Pro)<br/>
-      • <strong>OS version</strong> — e.g. Android 14 / iOS 17.4<br/>
-      • <strong>App version</strong> — shown in app settings or on the Google Play store page<br/>
-      • <strong>What went wrong</strong> — describe the bug in plain language<br/>
-      • <strong>Steps to reproduce</strong> — what did you tap or enter before it happened?<br/>
-      • <strong>Expected vs actual behaviour</strong> — what should have happened, and what did instead?<br/>
-      • <strong>Severity</strong> — minor glitch, broken feature, or crash?<br/><br/>
-      <strong>Optional:</strong><br/>
-      • Your email address — if you'd like a follow-up reply from us<br/>
-      • A screenshot — attach it directly to the email before sending
-    </div>
-
-    <div class="info-box">
-      <strong>How to take a screenshot:</strong><br/>
-      • <strong>Android:</strong> Press the Power and Volume Down buttons at the same time<br/>
-      • <strong>iPhone:</strong> Press the Side button and Volume Up button at the same time<br/><br/>
-      Attach the screenshot to the email before sending — it helps us reproduce the issue much faster.
-    </div>
-
-    <a class="btn" href="mailto:info@exsports.fi?subject=Bug%20Report%20%E2%80%93%20SurveyTools&body=Bug%20Report%20%E2%80%93%20SurveyTools%0A%0A---%20DEVICE%20INFORMATION%20---%0ADevice%20make%20and%20model%3A%20%5Be.g.%20Samsung%20Galaxy%20S23%20%2F%20iPhone%2015%20Pro%5D%0AOS%20version%3A%20%5Be.g.%20Android%2014%20%2F%20iOS%2017.4%5D%0AApp%20version%3A%20%5Be.g.%201.3.2%20%E2%80%94%20found%20in%20app%20settings%20or%20Google%20Play%5D%0A%0A---%20BUG%20DESCRIPTION%20---%0AWhat%20went%20wrong%3F%0A%5BDescribe%20the%20bug%20clearly%20%E2%80%94%20e.g.%20%22The%20density%20calculator%20crashed%20when%20I%20entered%200%22%5D%0A%0ASteps%20to%20reproduce%3A%0A1.%20%5BFirst%20step%5D%0A2.%20%5BSecond%20step%5D%0A3.%20%5BThird%20step%5D%0A%0AWhat%20did%20you%20expect%20to%20happen%3F%0A%5Be.g.%20The%20result%20should%20have%20shown%20an%20error%20message%5D%0A%0AWhat%20actually%20happened%3F%0A%5Be.g.%20The%20app%20crashed%20and%20returned%20to%20the%20home%20screen%5D%0A%0ASeverity%3A%0A%5B%20%5D%20Minor%20%E2%80%93%20cosmetic%20issue%2C%20something%20looks%20wrong%0A%5B%20%5D%20Moderate%20%E2%80%93%20a%20feature%20doesn%27t%20work%20correctly%0A%5B%20%5D%20Major%20%E2%80%93%20core%20functionality%20is%20broken%0A%5B%20%5D%20Critical%20%E2%80%93%20app%20crashes%20or%20is%20unusable%0A%0A---%20OPTIONAL%20---%0AYour%20email%20address%20(for%20follow-up)%3A%20%5Byour%40email.com%5D%0AScreenshot%3A%20%5BPlease%20attach%20any%20screenshots%20to%20this%20email%5D%0A%0A---%0AThank%20you%20for%20helping%20improve%20SurveyTools!">
-      🐛 &nbsp; Open Bug Report Email
-    </a>
-
-    <p class="note">
-      Tapping the button will open your email app with a pre-filled template. Replace each [placeholder] with your details and send it to us. We aim to respond within 5 business days.
-    </p>
+    <iframe
+      class="form-iframe"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdXFJrsPwKy0gKO_zS6jhRUdHu2g3-M9KiVtp3mbqO4WctSBQ/viewform?embedded=true"
+      title="Bug Report Form"
+    >Loading form…</iframe>
   </div>
 
   <footer>
